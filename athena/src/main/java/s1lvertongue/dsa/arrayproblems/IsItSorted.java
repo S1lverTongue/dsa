@@ -2,6 +2,13 @@ package s1lvertongue.dsa.arrayproblems;
 
 public class IsItSorted {
 	
+	/**
+	 * Function for testing if an array is sorted or not.
+	 * 
+	 * @param arr The array to test.
+	 * @return A boolean as to whether the array
+	 * is sorted or not.
+	 */
 	public static boolean isItSorted(int[] arr) {
 		for (int i = 0; i < arr.length - 1; i++) {
 			if (arr[i] > arr[i + 1]) {

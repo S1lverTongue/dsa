@@ -2,6 +2,12 @@ package s1lvertongue.dsa.arrayproblems;
 
 public class Rotations {
 	
+	/**
+	 * Function for rotating the array to the right.
+	 * 
+	 * @param arr The array to rotate.
+	 * @param d The number of right rotations.
+	 */
 	public static void rightRotation(int[] arr, int d) {
 		int end = arr[arr.length - 1];
 		
@@ -16,6 +22,12 @@ public class Rotations {
 		}
 	}
 	
+	/**
+	 * Function for rotating the array to the left.
+	 * 
+	 * @param arr The array to rotate.
+	 * @param d The number of left rotations.
+	 */
 	public static void leftRotation(int[] arr, int d) {
 		int start = arr[0];
 		

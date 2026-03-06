@@ -4,6 +4,13 @@ import java.util.ArrayList;
 
 public class RemoveDuplicates {
 	
+	/**
+	 * Function for iterating over an array of integers
+	 * and removing any duplicates from it.
+	 * 
+	 * @param arr The array to iterate over.
+	 * @return A new array with no duplicates included.
+	 */
 	public static int[] removeDuplicates(int[] arr) {
 		if (arr.length == 0) {
 			return new int[] {};

@@ -2,6 +2,12 @@ package s1lvertongue.dsa.sorts;
 
 public class Sorts {
 	
+	/**
+	 * Function for sorting an array using the
+	 * selection sort methodology.
+	 * 
+	 * @param values
+	 */
 	public static void selectionSort(int[] values) {
 		for (int i = 0; i < values.length; i++) {
 			
@@ -18,6 +24,12 @@ public class Sorts {
 		}
 	}
 	
+	/**
+	 * Function for sorting an array using the insertion
+	 * sort methodology.
+	 * 
+	 * @param values
+	 */
 	public static void insertionSort(int[] values) {
 		for (int i = 0; i < values.length; i++) {
 			int currentInsertIndex = i;
@@ -35,6 +47,12 @@ public class Sorts {
 		}
 	}
 	
+	/**
+	 * Function for sorting an array's values by using the
+	 * bubble sort methodology.
+	 * 
+	 * @param values
+	 */
 	public static void bubbleSort(int[] values) {
 		for (int i = 0; i < values.length; i++) {
 			
@@ -49,6 +67,15 @@ public class Sorts {
 		}
 	}
 	
+	/**
+	 * Function for sorting an array in conjuction with
+	 * the quick sort methodology.
+	 * 
+	 * @param values
+	 * @param low
+	 * @param high
+	 * @return The partition index
+	 */
 	static int partition(int[] values, int low, int high) {
 		int pivot = values[high];
 		
@@ -70,6 +97,13 @@ public class Sorts {
 		return i + 1;
 	}
 	
+	/**
+	 * Function for sorting an array using the quick sort methodology.
+	 * 
+	 * @param values
+	 * @param lowIndex
+	 * @param highIndex
+	 */
 	private static void quickSort(int[] values, int lowIndex, int highIndex) {
 		if (lowIndex < highIndex) {
 			int pi = partition(values, lowIndex, highIndex);
@@ -79,6 +113,11 @@ public class Sorts {
 		}
 	}
 	
+	/**
+	 * Function for sorting an array using the quick sort methodology.
+	 * 
+	 * @param values
+	 */
 	public static void quickSort(int[] values) {
 		quickSort(values, 0, values.length - 1);
 	}

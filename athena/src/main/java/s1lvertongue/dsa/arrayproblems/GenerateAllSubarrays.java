@@ -5,6 +5,13 @@ import java.util.Arrays;
 
 public class GenerateAllSubarrays {
 	
+	/**
+	 * Function for iterating over an array and then generating
+	 * and collecting all of the different subarrays in the parent array.
+	 * 
+	 * @param arr The array to iterate over.
+	 * @return int[][] two-dimensional array of the different subarrays.
+	 */
 	public static int[][] generateArray(int[] arr) {
 		ArrayList<int[]> al = new ArrayList<>();
 		
@@ -15,6 +22,7 @@ public class GenerateAllSubarrays {
 			}
 		}
 		
+		// Honestly surprised this is legal.
 		int[][] ret = new int[al.size()][];
 		
 		for (int i = 0; i < al.size(); i++) {
