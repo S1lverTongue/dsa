@@ -189,5 +189,25 @@ public class ArrayProblemsTest {
 		
 		assertTrue(output == -1);
 	}
+	
+	@Test
+	public void minimumCostToOneTest() {
+		int[] inpuArr = {4,3,2};
+		int rightAnswer = 4;
+		
+		int output = MinimumCostToOne.minimumCostToOne(inpuArr);
+		
+		assertTrue(output == rightAnswer);
+	}
+	
+	@Test
+	public void minimumCostToOne() {
+		int[] inputArr = {3,4};
+		int rightAnswer = 3;
+		
+		int output = MinimumCostToOne.minimumCostToOne(inputArr);
+		
+		assertTrue(output == rightAnswer);
+	}
 
 }
