@@ -149,5 +149,15 @@ public class ArrayProblemsTest {
 		
 		assertTrue(Arrays.equals(inputArray, outputArray));
 	}
+	
+	@Test
+	public void zerosEndTest() {
+		int[] inputArray = {1, 2, 0, 4, 3, 0, 5, 0};
+		int[] outputArray = {1, 2, 4, 3, 5, 0, 0, 0};
+		
+		ZerosEnd.zerosEnd(inputArray);
+		
+		assertTrue(Arrays.equals(inputArray, outputArray));
+	}
 
 }
