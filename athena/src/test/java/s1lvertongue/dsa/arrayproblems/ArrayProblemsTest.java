@@ -159,5 +159,35 @@ public class ArrayProblemsTest {
 		
 		assertTrue(Arrays.equals(inputArray, outputArray));
 	}
+	
+	@Test
+	public void minimumIncrementsTest() {
+		int[] inputArray = {4,7,19,16};
+		int k = 3;
+		
+		int output = MinimumIncrement.minimumIncrement(inputArray, k);
+		
+		assertTrue(output == 10);
+	}
+	
+	@Test
+	public void minimumIncrementsTest2() {
+		int[] inputArr = {4,4,4,4};
+		int k = 3;
+		
+		int output = MinimumIncrement.minimumIncrement(inputArr, k);
+		
+		assertTrue(output == 0);
+	}
+	
+	@Test
+	public void minimumIncrementsTest3() {
+		int[] inputArr = {4,2,6,8};
+		int k = 3;
+		
+		int output = MinimumIncrement.minimumIncrement(inputArr, k);
+		
+		assertTrue(output == -1);
+	}
 
 }
