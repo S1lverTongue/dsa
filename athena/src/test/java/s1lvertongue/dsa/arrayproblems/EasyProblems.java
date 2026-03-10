@@ -3,6 +3,8 @@ package s1lvertongue.dsa.arrayproblems;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
+import java.util.Arrays;
+
 import org.junit.Test;
 
 public class EasyProblems {
@@ -45,6 +47,56 @@ public class EasyProblems {
 		boolean result = DuplicateWithinKDistance.duplicateWithinKDistanceHashMapSolution(k, inputArr);
 		
 		assertTrue(result);
+	}
+	
+	@Test
+	public void evenGreaterThanOddTest() {
+		int[] inputArr = {1,2,2,1};
+		int[] correctArry = {1,2,1,2};
+		
+		EvenGreaterThanOdd.evenGreaterThanOdd(inputArr);
+		
+		assertTrue(Arrays.equals(inputArr, correctArry));
+	}
+	
+	@Test
+	public void evenGreaterThanOddTest2() {
+		int[] inputArr = {1,3,2};
+		int[] correctArray = {1,3,2};
+		
+		EvenGreaterThanOdd.evenGreaterThanOdd(inputArr);
+		
+		assertTrue(Arrays.equals(inputArr, correctArray));
+	}
+	
+	@Test
+	public void sumAllSubarraysTest() {
+		int[] inputArr = {1,4,5,3,2};
+		int result = 116;
+		
+		int output = SumAllSubarrays.sumAllSubarrays(inputArr);
+		
+		assertTrue(output == result);
+	}
+	
+	@Test
+	public void buyAndSellTest() {
+		int[] prices = {100,180,260, 310, 40, 535, 695};
+		int result = 865;
+		
+		int output = StockBuyAndSell.buyAndSell(prices);
+		
+		assertTrue(output == result);
+	}
+	
+	@Test
+	public void buyAndSellTest2() {
+		int[] prices = {4,2};
+		int result = 0;
+		
+		int output = StockBuyAndSell.buyAndSell(prices);
+		
+		assertTrue(output == result);
 	}
 
 }
