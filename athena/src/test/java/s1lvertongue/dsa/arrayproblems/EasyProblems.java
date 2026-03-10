@@ -98,5 +98,15 @@ public class EasyProblems {
 		
 		assertTrue(output == result);
 	}
+	
+	@Test
+	public void uniqueNumbersTest() {
+		int[] arr = {2,3,5,4,5,3,4};
+		int result = 2;
+		
+		int output = UniqueNumbers1.uniqueNumbers(arr);
+		
+		assertTrue(output == result);
+	}
 
 }
