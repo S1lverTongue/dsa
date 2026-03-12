@@ -108,5 +108,14 @@ public class EasyProblems {
 		
 		assertTrue(output == result);
 	}
+	
+	public void missingNumberTest() {
+		int[] arr = {8,2,4,5,3,7,1};
+		int result = 6;
+		
+		int output = MissingNumber.missingNumber(arr);
+		
+		assertTrue(output == result);
+	}
 
 }
