@@ -128,5 +128,26 @@ public class EasyProblems {
 		
 		assertTrue(Arrays.equals(output, correct));
 	}
+	
+	@Test
+	public void repeatingNumbers() {
+		int[] arr = {1,3,2,3,4};
+		int correct = 3;
+		
+		
+		int output = RepeatingNumbers.repeatingNumbers(arr);
+		
+		assertTrue(correct == output);
+	}
+	
+	@Test
+	public void repeatingNumbers2() {
+		int[] arr = {1,5,1,2,3,4};
+		int correct = 1;
+		
+		int output = RepeatingNumbers.repeatingNumbers(arr);
+		
+		assertTrue(correct == output);
+	}
 
 }
