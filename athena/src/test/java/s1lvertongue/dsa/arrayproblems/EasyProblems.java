@@ -109,6 +109,7 @@ public class EasyProblems {
 		assertTrue(output == result);
 	}
 	
+	@Test
 	public void missingNumberTest() {
 		int[] arr = {8,2,4,5,3,7,1};
 		int result = 6;
@@ -116,6 +117,16 @@ public class EasyProblems {
 		int output = MissingNumber.missingNumber(arr);
 		
 		assertTrue(output == result);
+	}
+	
+	@Test
+	public void missingAndRepeatingTest() {
+		int[] arr = {3,1,3};
+		int[] correct = {3,2};
+		
+		int[] output = MissingAndRepeating.missingAndRepeating(arr);
+		
+		assertTrue(Arrays.equals(output, correct));
 	}
 
 }
