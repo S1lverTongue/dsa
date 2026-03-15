@@ -149,5 +149,25 @@ public class EasyProblems {
 		
 		assertTrue(correct == output);
 	}
+	
+	@Test
+	public void sorted3SubsequenceTest() {
+		int[] arr = {12, 11, 10, 5, 6,2, 30};
+		int[] correct = {5,6,30};
+		
+		int[] output = Sorted3Subsequence.sorted3Subsequence(arr);
+		
+		assertTrue(Arrays.equals(output, correct));
+	}
+	
+	@Test
+	public void sorted3SubsequenceTest2() {
+		int[] arr = {4,3,2,1};
+		int[] correct = {};
+		
+		int[] output = Sorted3Subsequence.sorted3Subsequence(arr);
+		
+		assertTrue(Arrays.equals(correct, output));
+	}
 
 }
