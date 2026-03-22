@@ -179,5 +179,35 @@ public class EasyProblems {
 		
 		assertTrue(correct == output);
 	}
+	
+	@Test
+	public void equilibriumIndexTest() {
+		int[] arr = {1, 2, 0, 3};
+		int correct = 2;
+		
+		int output = EquilibriumIndex.equilibriumIndex(arr);
+		
+		assertTrue(output == correct);
+	}
+	
+	@Test
+	public void equilibriumIndexTest2() {
+		int[] arr = {1,1,1,1};
+		int correct = -1;
+		
+		int output = EquilibriumIndex.equilibriumIndex(arr);
+		
+		assertTrue(output == correct);
+	}
+	
+	@Test
+	public void equilibriumIndexTest3() {
+		int[] arr = {-7, 1, 5, 2, -4, 3, 0};
+		int correct = 3;
+		
+		int output = EquilibriumIndex.equilibriumIndex(arr);
+		
+		assertTrue(output == correct);
+	}
 
 }

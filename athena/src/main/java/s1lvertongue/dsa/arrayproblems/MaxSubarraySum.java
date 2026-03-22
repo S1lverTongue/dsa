@@ -12,6 +12,15 @@ public class MaxSubarraySum {
 		return sum;
 	}
 	
+	/**
+	 * Given an integer array arr[], find the subarray (containing
+	 * at least one element) which has the maximum possible sum, and return that sum.
+	 * 
+	 * Note: A subarray is a continuous part of an array.
+	 * 
+	 * @param arr
+	 * @return
+	 */
 	public static int maxSubarraySum(int[] arr) {
 		int maxSum = Integer.MIN_VALUE;
 		
