@@ -169,5 +169,15 @@ public class EasyProblems {
 		
 		assertTrue(Arrays.equals(correct, output));
 	}
+	
+	@Test
+	public void maxSubarrayTest() {
+		int[] arr = {2,3,-8,7,-1,2,3};
+		int correct = 11;
+		
+		int output = MaxSubarraySum.maxSubarraySum(arr);
+		
+		assertTrue(correct == output);
+	}
 
 }
